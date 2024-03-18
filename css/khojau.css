@@ -1,0 +1,128 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#f2ecec;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding: auto;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 70px;
+    border: 2px solid rgb(18, 17, 17) ;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+    .navigation a{
+    position:relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 40px;
+}
+ .navigation a::after{
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+ } 
+
+ .navigation a:hover::after {
+    transform-origin:left;
+    transform: scaleX(1);
+ }
+
+ .navigation .button{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 1s;
+ }
+ .navigation .buttonn{
+    font-size: 1.3em;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border-color: transparent;
+    align-items: center;
+    cursor: pointer;
+ }
+ 
+.navigation .button:hover{
+    background: #fff;
+    color: black;
+}
+.table{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ .table tr{
+   position: sticky;
+    width: 600px;
+    height: 40px;
+    background-color: #0a0a0a;
+    padding: 20px;
+    padding-left: 30px;
+    color: #f2ecec;
+ }
+ .table  td{
+    width: 150px;
+    padding: 20px;
+    color: #f2ecec;
+ }
+ .table th{
+    position: sticky;
+    margin-top: 70px;
+ }
+ .khojau-box{
+   width: 100%;
+   max-width: 740px;
+   margin: 100px auto 15px;
+   margin-top: 100px;
+   padding: 40px 30px 70px;
+ }
